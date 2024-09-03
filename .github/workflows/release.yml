@@ -84,7 +84,7 @@ jobs:
             release/obj-sparc64/QEMU,VGA.bin
 
       - name: Prepare release from artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: "openbios-multiarch-${{ github.ref_name }}"
           path: archive
